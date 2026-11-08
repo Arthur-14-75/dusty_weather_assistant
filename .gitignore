@@ -1,0 +1,42 @@
+# --- Sécurité & Identifiants ---
+.env
+.env.*
+*.pem
+*.key
+
+# --- Environnements virtuels & Python ---
+venv/
+.venv/
+.dusty/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# --- Données générées & Dossiers du pipeline ---
+# Téléchargements bruts Météo-France / Aeroweb
+bulletins/
+downloads/
+*.pdf
+
+# Résultats intermédiaires et finaux
+bulletins_traduits/
+bulletins_analyses/
+*.json
+!bulletin_LFPZ_LFAB_traduit_*.json   # exemple de résultat intermédiaire
+!rapport_prevol_LFAB_traduit_*.pdf    # exemple de résultat final
+# --- Navigateurs & Automatisation (Playwright) ---
+# Sessions persistantes, profils de navigateur, cookies ou screenshots de debug
+.auth/
+playwright-report/
+test-results/
+screenshots/
+
+# --- Systèmes d'exploitation & Éditeurs ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
